@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/muaz-portfolio/static/css/main.4053869b.css",
+    "main.js": "/muaz-portfolio/static/js/main.fed08beb.js",
+    "index.html": "/muaz-portfolio/index.html",
+    "main.4053869b.css.map": "/muaz-portfolio/static/css/main.4053869b.css.map",
+    "main.fed08beb.js.map": "/muaz-portfolio/static/js/main.fed08beb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4053869b.css",
+    "static/js/main.fed08beb.js"
+  ]
+}
