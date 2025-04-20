@@ -1,0 +1,21 @@
+.experience {
+    background-color: var(--background);
+    padding: 100px 0;
+  }
+  
+  .experience-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+  
+  .experience-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .experience {
+      padding: 60px 0;
+    }
+  }

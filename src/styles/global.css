@@ -1,0 +1,128 @@
+:root {
+    --primary: #232946;
+    --secondary: #d4d8f0;
+    --accent: #3da9fc;
+    --accent-light: #7fdeff;
+    --text: #fffffe;
+    --paragraph: #b8c1ec;
+    --button: #eebbc3;
+    --button-text: #232946;
+    --background: #121629;
+    --card-background: #232946;
+    --border-radius: 8px;
+    --font-mono: 'Space Mono', monospace;
+    --font-sans: 'Work Sans', sans-serif;
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-mono);
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: var(--paragraph);
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  a:hover {
+    color: var(--accent-light);
+  }
+  
+  button {
+    background-color: var(--button);
+    color: var(--button-text);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--border-radius);
+    font-family: var(--font-mono);
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+  }
+  
+  section {
+    padding: 100px 0;
+  }
+  
+  .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+  .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent);
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background-color: var(--accent);
+    margin-left: 4px;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  @media (max-width: 768px) {
+    section {
+      padding: 60px 0;
+    }
+    
+    .container {
+      width: 90%;
+    }
+    
+    .section-title {
+      font-size: 1.75rem;
+    }
+  }
