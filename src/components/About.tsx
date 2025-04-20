@@ -74,11 +74,16 @@ const About: React.FC = () => {
           >
             <div className="image-container">
               <img
-                src={`${process.env.PUBLIC_URL}/assets/images/profile-photo.jpg`}
+                src={`${process.env.PUBLIC_URL}/assets/images/200w.gif`}
                 alt="Ahmad Muaz Bin Mohammed"
                 className="profile-image"
               />
-              <div className="image-decoration"></div>
+              <div className="image-decoration">
+                <div className="mirror-effect"></div>
+                <div className="mirror-effect-2"></div>
+                <div className="mirror-effect-3"></div>
+                <div className="mirror-effect-4"></div>
+              </div>
             </div>
 
             <div className="contact-info">
