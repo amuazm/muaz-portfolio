@@ -1,145 +1,154 @@
 .about {
-    background-color: var(--background);
-    padding: 100px 0;
-  }
-  
+  background-color: var(--background);
+  padding: 100px 0;
+}
+
+.about-content {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.highlight {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px -15px rgba(2, 12, 27, 0.8);
+}
+
+.highlight h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+}
+
+.highlight p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.about-image {
+  flex: 0 0 350px;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.placeholder-image {
+  width: 300px;
+  height: 300px;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-mono);
+  color: var(--paragraph);
+  position: relative;
+  z-index: 2;
+}
+
+.image-decoration {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--accent);
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+
+.contact-info {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent);
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-label {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: var(--paragraph);
+  transition: var(--transition);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.contact-item a:hover {
+  color: var(--accent-light);
+}
+
+@media (max-width: 992px) {
   .about-content {
-    display: flex;
-    gap: 4rem;
-    align-items: flex-start;
+    flex-direction: column;
   }
-  
+
   .about-text {
-    flex: 1;
+    order: 2;
   }
-  
-  .about-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.05rem;
-  }
-  
-  .about-highlights {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 2.5rem;
-  }
-  
-  .highlight {
-    background-color: var(--card-background);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    height: 100%;
-  }
-  
-  .highlight:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px -15px rgba(2, 12, 27, 0.8);
-  }
-  
-  .highlight h3 {
-    color: var(--accent);
-    margin-bottom: 0.5rem;
-    font-family: var(--font-mono);
-    font-size: 1.1rem;
-  }
-  
-  .highlight p {
-    font-size: 0.95rem;
-    margin-bottom: 0;
-  }
-  
+
   .about-image {
-    flex: 0 0 350px;
+    order: 1;
+    margin: 0 auto 3rem;
   }
-  
+
   .image-container {
-    position: relative;
-    margin-bottom: 2rem;
-  }
-  
-  .placeholder-image {
+    margin: 0 auto 2rem;
     width: 300px;
-    height: 300px;
-    background-color: var(--card-background);
-    border-radius: var(--border-radius);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-mono);
-    color: var(--paragraph);
-    position: relative;
-    z-index: 2;
   }
-  
-  .image-decoration {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 300px;
-    height: 300px;
-    border: 2px solid var(--accent);
-    border-radius: var(--border-radius);
-    z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .about-highlights {
+    grid-template-columns: 1fr;
   }
-  
-  .contact-info {
-    background-color: var(--card-background);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    border-left: 4px solid var(--accent);
-  }
-  
-  .contact-item {
-    margin-bottom: 1rem;
-  }
-  
-  .contact-item:last-child {
-    margin-bottom: 0;
-  }
-  
-  .contact-label {
-    font-family: var(--font-mono);
-    color: var(--accent);
-    margin-right: 0.5rem;
-  }
-  
-  .contact-item a {
-    text-decoration: none;
-    color: var(--paragraph);
-    transition: var(--transition);
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-  }
-  
-  .contact-item a:hover {
-    color: var(--accent-light);
-  }
-  
-  @media (max-width: 992px) {
-    .about-content {
-      flex-direction: column;
-    }
-    
-    .about-text {
-      order: 2;
-    }
-    
-    .about-image {
-      order: 1;
-      margin: 0 auto 3rem;
-    }
-    
-    .image-container {
-      margin: 0 auto 2rem;
-      width: 300px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .about-highlights {
-      grid-template-columns: 1fr;
-    }
-  }
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  position: relative;
+  z-index: 2;
+}
