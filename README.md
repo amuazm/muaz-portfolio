@@ -10,7 +10,7 @@ Make sure you have the following installed:
 
 1. Clone this repository
    ```
-   git clone https://github.com/yourusername/muaz-portfolio.git
+   git clone https://github.com/amuazm/muaz-portfolio.git
    cd muaz-portfolio
    ```
 
