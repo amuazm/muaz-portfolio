@@ -64,14 +64,11 @@ const Skills: React.FC = () => {
         >
           <h3>Other Skills & Interests</h3>
           <div className="skills-tags">
-            <span className="skill-tag">Agile Development</span>
-            <span className="skill-tag">CI/CD</span>
             <span className="skill-tag">Mobile Development</span>
             <span className="skill-tag">Responsive Design</span>
             <span className="skill-tag">RESTful APIs</span>
             <span className="skill-tag">Computer Vision</span>
             <span className="skill-tag">Natural Language Processing</span>
-            <span className="skill-tag">Blockchain</span>
             <span className="skill-tag">Web3</span>
             <span className="skill-tag">IoT</span>
           </div>

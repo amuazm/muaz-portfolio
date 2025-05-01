@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="contact-details">
                 <h3>GitHub</h3>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a>
+                <a href="https://github.com/amuazm" target="_blank" rel="noopener noreferrer">github.com/amuazm</a>
               </div>
             </div>
             
@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="contact-details">
                 <h3>LinkedIn</h3>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a>
+                <a href="https://linkedin.com/in/amuazm" target="_blank" rel="noopener noreferrer">linkedin.com/in/amuazm</a>
               </div>
             </div>
           </motion.div>

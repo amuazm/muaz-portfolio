@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <p>Want to see more of my work?</p>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="github-link">
+          <a href="https://github.com/amuazm" target="_blank" rel="noopener noreferrer" className="github-link">
             View More on GitHub
           </a>
         </motion.div>
