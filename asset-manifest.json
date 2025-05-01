@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/muaz-portfolio/static/css/main.7c8590f6.css",
-    "main.js": "/muaz-portfolio/static/js/main.091583df.js",
+    "main.js": "/muaz-portfolio/static/js/main.a749fae2.js",
     "index.html": "/muaz-portfolio/index.html",
     "main.7c8590f6.css.map": "/muaz-portfolio/static/css/main.7c8590f6.css.map",
-    "main.091583df.js.map": "/muaz-portfolio/static/js/main.091583df.js.map"
+    "main.a749fae2.js.map": "/muaz-portfolio/static/js/main.a749fae2.js.map"
   },
   "entrypoints": [
     "static/css/main.7c8590f6.css",
-    "static/js/main.091583df.js"
+    "static/js/main.a749fae2.js"
   ]
 }
